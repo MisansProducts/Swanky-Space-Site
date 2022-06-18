@@ -1,0 +1,587 @@
+/* HTML */
+html {
+	height: 100%;
+	font-size: 1.725vmin; /* Should be about 16 pixels on a 1080p monitor*/
+}
+
+/* Body */
+body {
+	width: 100%;
+	height: 100%;
+    margin: auto;
+    display: block;
+	background-color: black;
+	background-image: url(Pictures/bg1.png), url(Pictures/bg2.png), url(Pictures/bg3.png), url(Pictures/bg4.png);
+}
+
+/* Outer, middle, and inner are used to center the dividers vertically */
+.outer {
+	display: table;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+}
+
+.middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.inner {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* "Swanky Space" */
+.title {
+    margin: auto;
+    font-family: SpaceAge;
+    font-size: 8em;
+    color: #f2ffff;
+    display: table;
+    text-align: center;
+	line-height: 0.55;
+	padding-top: 1rem;
+	padding-bottom: 1.125rem; /* 18 pixels */
+	user-select: none; /* Prevent text selection */
+	/* Chrome, Safari, Opera */
+	-webkit-animation: rainbow 12s infinite;
+	/* Internet Explorer */
+	-ms-animation: rainbow 12s infinite;
+	/* Standar Syntax */
+	animation: rainbow 12s infinite;
+}
+
+ /* Style the tab */
+.tab {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	background-color: transparent;
+}
+
+/* Styles each button */
+.tablinks {
+	width: 8rem;
+	font-size: 2rem;
+	font-family: Bender;
+	text-align: center;
+}
+
+/* Initializes border radius for buttons on the left and right */
+#music {
+	border-radius: 2rem 0 0 2rem;
+}
+
+#about {
+	border-radius: 0 2rem 2rem 0;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+	background-color: #94acbb;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 0.875rem 0;
+	transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	background-color: #adc5d5;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	background-color: #c3e8ff;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	margin-top: -3rem;
+	padding-bottom: 1.25rem;
+	background-color: #c3e8ff;
+	display: none;
+	border-top: none;
+	animation: fadeEffect 1s; /* Fading effect takes 1 second */
+	color: black;
+	width: 67.5rem; /* 1080 pixels */
+	font-family: Bender;
+	font-size: 1.5rem;
+	border-radius: 3rem;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+/* The little ribbon header for each tab content */
+.header_div {
+	width: 33.75rem;
+	background: linear-gradient(to right, #75caff, #c3e8ff);
+	border-radius: 3rem 0 0 0;
+	margin-bottom: -2.5rem;
+	user-select: none; /* Prevent text selection */
+}
+
+/* Sub headings for each name in the about section; Alex and Tyler */
+.ab_names {
+	font-family: SpaceAge;
+	font-size: 2.25rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin-bottom: -1rem;
+}
+
+/* The space inside the music tab where it displays the tree list */
+.inner_music {
+	margin: auto;
+	width: 62.5rem;
+	height: 35.15625rem;
+	border: 0.1875rem solid #33ACFF;
+	border-radius: 3rem;
+	background-color: white;
+	overflow: auto;
+}
+
+.inner_image {
+	margin: auto;
+	width: 62.5rem;
+	height: 24rem;
+	border: 0.1875rem solid #33ACFF;
+	border-radius: 3rem;
+	background-color: white;
+	overflow: auto;
+}
+
+#image_source {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 0.5rem;
+	border: 0.1875rem solid #33ACFF;
+	max-width: 48rem;
+}
+
+/* Remove default bullets */
+ul, .inner_music_list {
+	list-style-type: none;
+}
+
+li.list_end {
+	list-style-type: disc;
+}
+
+/* Style the caret/arrow */
+.caret {
+	cursor: pointer;
+	user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+	content: "\25B6";
+	color: black;
+	display: inline-block;
+	margin-right: 0.375rem;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+	transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+	display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+	display: block;
+}
+
+.music_headings {
+	font-family: SpaceAge;
+	font-size: 2.25rem;
+	margin-top: -1rem;
+	margin-bottom: 0rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	user-select: none; /* Prevent text selection */
+}
+
+/* Music highlights rows */
+.music_highlights_row {
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+/* Music highlights rows after */
+.music_highlights_row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* Music highlights columns */
+.music_highlights_col {
+	float: left;
+	width: 0.5;
+	padding-top: 0.5rem;
+	user-select: none; /* Prevent text selection */
+}
+
+/* Music highlights */
+.music_highlights {
+	width: 12rem;
+	height: 12rem;
+	cursor: pointer;
+	user-select: none; /* Prevent text selection */
+	transition: transform 0.5s ease;
+}
+
+.music_highlights:hover {
+	transform: scale(1.5) rotate(25deg);
+}
+
+/* The cell containing the highlight image and label */
+.music_highlights_cell {
+	width: 12rem;
+	height: 12rem;
+	border: 0.125rem solid #33ACFF;
+	font-size: 1.25rem;
+	float: inherit;
+	width: inherit;
+	margin-right: 0.5rem;
+	user-select: none; /* Prevent text selection */
+	transition: 0.5s ease;
+	overflow: hidden;
+}
+
+.music_highlights_cell:hover {
+	font-size: 1.5rem;
+}
+
+/* Highlight label */
+.music_highlights_label {
+	width: 12rem;
+	height: 1.6875rem;
+	position: absolute;
+	margin: 0 auto;
+	margin-top: -2rem; /* 32 pixels up */
+	background: linear-gradient(to top, #000000, rgba(195, 232, 255, 0));
+	pointer-events: none; /* Makes underlying element clickable */
+	user-select: none; /* Prevent text selection */
+}
+
+.music_highlights_label_text {
+	position: absolute; /* For position: absolute, center horizontal by left: 0 and right: 0 */
+	color: white;
+	font-family: Bender;
+	margin: 0 auto;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	pointer-events: none; /* Makes underlying element clickable */
+	user-select: none; /* Prevent text selection */
+}
+
+/* The media player for the music tab */
+#music_media {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	width: 62.5rem;
+	margin-bottom: 0.75rem;
+	border-radius: 3rem;
+}
+
+/* The media player for the videos tab */
+#video_media {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	width: 62.5rem;
+	margin-bottom: 0.75rem;
+	border: 0.125rem solid #33ACFF;
+}
+
+#music_media_label {
+	margin-bottom: 0.5rem;
+	font-size: 1.75rem;
+	user-select: none; /* Prevent text selection */
+}
+
+#image_media_label {
+	margin-bottom: 0.5rem;
+	font-size: 1.75rem;
+	text-align: center;
+	user-select: none; /* Prevent text selection */
+}
+
+h3 {
+	padding: 0 2.75rem;
+	font-family: SpaceAge;
+	font-size: 3rem;
+}
+
+.basic_text {
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+a {
+	color: #006e78;
+	text-decoration: none;
+}
+
+hr {
+	width: 61.5rem;
+	color: #33ACFF;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* YouTube video player inside the game tab */
+.video {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 1.5rem;
+	margin-top: 1.5rem;
+	border: 0.1875rem solid #33ACFF;
+	width: 45rem;
+	height: 25.3125rem;
+}
+
+/* Each picture inside the game tab */
+.pictures {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 0.5rem;
+	border: 0.1875rem solid #33ACFF;
+	width: 45rem;
+	height: 25.3125rem;
+	transition: width .2s, height .2s;
+}
+
+/* Makes the pictures inside the game tab bigger on hover */
+.pictures:hover {
+	width: 60rem;
+	height: 33.75rem;
+}
+
+/* Tyler's DSLR camera is 3 by 2 aspect ratio, so this is for the about tab */
+.pictures3by2 {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	margin-top: 0.375rem;
+	margin-bottom: 0.5rem;
+	border: 0.1875rem solid #33ACFF;
+	width: 45rem;
+	height: 30rem;
+}
+
+.about_section {
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+.about_section_picture {
+	float: right;
+	position: relative;
+	margin-left: 1.875rem;
+}
+
+#about_section_picture_alex {
+	float: left;
+	margin-left: 0;
+	margin-right: 1.875rem;
+}
+
+.about_section_links {
+	width: 45rem;
+	position: absolute;
+	color: #c3e8ff;
+	font-size: 1rem;
+	bottom: 0.6875rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background: linear-gradient(to top, #000000, rgba(195, 232, 255, 0));
+}
+
+.about_section_link {
+	color: white;
+	font-size: 1rem;
+}
+
+.about_section_description {
+	text-align: left;
+	font-size: 1.25rem;
+}
+
+.about_section_description::first-letter {
+	font-weight: bold;
+	font-size: 2.5rem;
+}
+
+#about_end_favicon {
+	display: block;
+	margin: auto;
+	outline: 0.1875rem solid #33ACFF;
+	outline-offset: -0.1875rem;
+	border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.game_section_download {
+	display: block;
+	margin: auto;
+	margin-bottom: 1.375rem;
+	background-color: #adc5d5;
+	border: 0.1875rem solid #33ACFF;
+	font-size: 1.75rem;
+	font-family: Bender;
+	text-align: center;
+	border-radius: 1rem;
+	box-shadow: 0 0.75rem #666;
+	padding: 0.75rem;
+	width: 12rem;
+	transition: 0.3s;
+}
+
+.game_section_download:hover {
+	background-color: #c3e8ff;
+	width: 16rem;
+	cursor: pointer;
+}
+
+.game_section_download_version {
+	font-size: 1rem;
+}
+
+ul.normal_list {
+	margin-left: 3rem;
+	margin-right: 3rem;
+	list-style: initial;
+}
+
+.game_headings {
+	font-family: SpaceAge;
+	font-size: 2.25rem;
+	margin-top: -1rem;
+	margin-bottom: -1rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	user-select: none; /* Prevent text selection */
+}
+
+.game_pictures_div {
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.game_pictures_div_old {
+	display: grid;
+	grid-template-columns: auto auto;
+	margin: auto;
+	margin-top: 1.5rem;
+	width: 47rem;
+}
+
+.pictures_static {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 0.5rem;
+	border: 0.1875rem solid #33ACFF;
+	width: 22.5rem;
+	height: 12.65625rem;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+   0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+    0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+/* Fonts */
+/* MisanNEW */
+@font-face{
+    src: url("Fonts/MisanNEW.ttf");
+    font-family: MisanNEW;
+}
+
+/* Nootdorp */
+@font-face{
+	src: url("Fonts/Nootdorp.ttf");
+	font-family: Nootdorp;
+}
+
+/* Space Age */
+@font-face{
+    src: url("Fonts/SpaceAge.ttf");
+    font-family: SpaceAge;
+}
+
+/* Bender */
+@font-face{
+    src: url("Fonts/Jovanny Lemonad - Bender.otf");
+    font-family: Bender;
+}

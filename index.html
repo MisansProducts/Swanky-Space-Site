@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+
+	<head>
+
+		<!-- Meta -->
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1, no-cache">
+		<meta http-equiv = "cache-control">
+	
+		<!-- Add CSS -->
+		<link rel = "stylesheet" href = "style.css">
+	
+		<!-- Add JS -->
+		<script src = "script.js"></script>
+
+		<!-- Add Favicon -->
+		<link rel = "shortcut icon" href = "Pictures/favicon.ico"/>
+
+		<!-- Tab Title -->
+		<title>Swanky Space</title>
+
+	</head>
+	
+	<!-- Body -->
+	<body>
+	
+		<div class = "outer">
+		
+			<div class = "middle">
+			
+				<div class = "inner">
+				
+					<!-- Heading -->
+					<h1 class = "title">Swanky<br>Space</h1>
+					
+					<br>
+					
+					<!-- Tab links -->
+					<div class = "tab">
+						<button class = "tablinks" id = "music" onclick = "openTab(event, 'Music')">Music</button>
+						<button class = "tablinks" onclick = "openTab(event, 'Images')">Images</button>
+						<button class = "tablinks" onclick = "openTab(event, 'Videos')">Videos</button>
+						<button class = "tablinks" onclick = "openTab(event, 'Game')">Game</button>
+						<button class = "tablinks" id = "about" onclick = "openTab(event, 'About')">About</button>
+					</div>
+					
+					<!-- Tab content -->
+					<!-- MUSIC -->
+					<div id = "Music" class = "tabcontent">
+					
+						<div class = "header_div">
+						
+							<h3>Music</h3>
+							
+						</div>
+						
+						<p class = "basic_text">
+						This is where all the music and audio are stored. Here, you will find all sorts of things to listen
+						to, from music created by Tyler or Alex to funny audio clips and niche music by other artists.</p>
+						
+						<p class = "basic_text">
+						Directly below are the track highlights.
+						These are going to be tracks that have the most substance and feel the most finished.</p>
+						
+						<p class = "basic_text">
+						Browse through the list at the bottom to select a track, then use this audio controller to
+						pause, play, seek, or change the volume!</p>
+						
+						<!-- Track Highlights -->
+						<p class = "music_headings">Track Highlights</p>
+						
+						<div class = "music_highlights_row">
+						
+							<div class = "music_highlights_col">
+							
+								<!-- Hairline -->
+								<div class = "music_highlights_cell">
+								
+									<img src = "Pictures/hlt1.png" alt = "Hairline" class = "music_highlights"
+										onclick = "changeMusic(event)" href = "#" data-value = "Music/Tyler/Best/Vocals/Hairline.mp3">
+									
+									<center class = "music_highlights_label">
+									
+										<p class = "music_highlights_label_text">Hairline</p>
+										
+									</center>
+									
+								</div>
+								
+								<!-- Overworld -->
+								<div class = "music_highlights_cell">
+								
+									<img src = "Pictures/hlt2.png" alt = "Overworld" class = "music_highlights"
+										onclick = "changeMusic(event)" href = "#" data-value = "Music/Tyler/Best/Vocals/Overworld.mp3">
+									
+									<center class = "music_highlights_label">
+									
+										<p class = "music_highlights_label_text">Overworld</p>
+										
+									</center>
+									
+								</div>
+								
+								<!-- Intoxicating -->
+								<div class = "music_highlights_cell">
+								
+									<img src = "Pictures/hlt3.png" alt = "Overworld" class = "music_highlights"
+										onclick = "changeMusic(event)" href = "#" data-value = "Music/Tyler/Best/Vocals/Intoxicating.mp3">
+									
+									<center class = "music_highlights_label">
+									
+										<p class = "music_highlights_label_text">Intoxicating</p>
+										
+									</center>
+									
+								</div>
+								
+							</div>
+							
+						</div>
+						
+						<!-- Music label -->
+						<p class = "basic_text" id = "music_media_label"><b>Idle</b></p>
+						
+						<!-- Audio controller -->
+						<audio id = "music_media" controls = "controls">
+							<source id = "music_source" src = "Music/nothinglol.mp3">Your browser does not support the audio element.</source>
+						</audio>
+						
+						<!-- Music list -->
+						<div class = "inner_music">
+							
+							<!-- This is where the automated music script appends folders and tracks to -->
+							<ul class = "inner_music_list" id = "musicListMusic"></ul>
+							
+						</div>
+						
+					</div>
+					
+					<!-- IMAGES -->
+					<div id = "Images" class = "tabcontent">
+					
+						<div class = "header_div">
+						
+							<h3>Images</h3>
+							
+						</div>
+						
+						<p class = "basic_text">
+						Browse through the list at the bottom to select an image and view it in the frame below.</p>
+						
+						<!-- Image label -->
+						<p class = "basic_text" id = "image_media_label">Chrysanthemum</p>
+						
+						<!-- Image viewer -->
+						<img src = "Images/Sample Images/Chrysanthemum.jpg" alt = "Image" id = "image_source">
+						
+						<!-- Images list -->
+						<div class = "inner_image">
+							
+							<!-- This is where the automated images script appends folders and images to -->
+							<ul class = "inner_image_list" id = "imagesListImages"></ul>
+							
+						</div>
+						
+					</div>
+					
+					<!-- VIDEOS -->
+					<div id = "Videos" class = "tabcontent">
+					
+						<div class = "header_div">
+						
+							<h3>Videos</h3>
+							
+						</div>
+						
+						<p class = "basic_text">
+						Check out some of these cool videos!</p>
+						
+						<video id = "video_media" controls>
+							<source id = "video_source" src = "Videos/Sample Video.mp4" type = "video/mp4">Your browser does not support HTML video.</source>
+						</video>
+						
+					</div>
+					
+					<!-- GAME -->
+					<div id = "Game" class = "tabcontent">
+					
+						<div class = "header_div">
+						
+							<h3>Game</h3>
+							
+						</div>
+						<p class = "basic_text">
+							The game, Swanky Space, is a 2-dimensional space shooter created by Alex Akoopie in 2016.
+							It is similar to the game
+							<a target = "_blank" href = "https://en.wikipedia.org/wiki/Asteroids_(video_game)">Asteroids</a>
+							in that the player is controlling a spaceship which appears to manifest a triangle.
+							The player eliminates asteroids and other objects to gain score and money (Swanky Credits) in order to
+							purchase upgrades for their spaceship and progress the game. The goal of Swanky Space is to reach the
+							end of the game whilst the player utilizes all the skills they have learned along way.
+							In other words, shoot things before they kill you!</p>
+						
+						<p class = "game_headings">Development video</p>
+						
+						<iframe class = "video" src = "https://www.youtube.com/embed/DMPzvIbyw9o?rel=0"></iframe>
+						
+						<p class = "game_headings">Download</p>
+						
+						<p class = "basic_text">
+							Get the current, publicly available version of Swanky Space GameJolt. This version includes 3
+							enemies (Asteroids, Drones, and Saucers), 1 boss (WILLIAMS), 2 weapons (pistol and shotgun), a
+							shop, and a skill menu.</p>
+						
+						<button class = "game_section_download" onclick = "window.open('https://gamejolt.com/games/swankyspace/148141')">Download<br><i class = "game_section_download_version">Version 0.8</i></button>
+						
+						<p class = "game_headings">Challenges</p>
+						
+						<p class = "basic_text">
+							Here is a list of associated challenges:
+							<ul class = "normal_list">
+								<li>Fight and finish off WILLIAMS</li>
+								<li>Beat the game without using the shotgun</li>
+								<li>Beat the game without upgrading anything</li>
+								<li>Survive for 3 minutes without firing a bullet</li>
+								<li>Kite as many Drones as possible without damaging them nor dying</li>
+							</ul>
+						</p>
+						
+						<p class = "game_headings">Screenshots</p>
+						
+						<div class = "game_pictures_div">
+							<img src = "Pictures/sc5.png" alt = "Screenshot 1" class = "pictures">
+							<img src = "Pictures/sc6.png" alt = "Screenshot 2" class = "pictures">
+							<img src = "Pictures/sc7.png" alt = "Screenshot 3" class = "pictures">
+						</div>
+						
+						<p class = "game_headings">Old screenshots</p>
+						
+						<div class = "game_pictures_div_old">
+							<img src = "Pictures/sc1.jpg" alt = "Old screenshot 1" class = "pictures_static">
+							<img src = "Pictures/sc2.jpg" alt = "Old screenshot 2" class = "pictures_static">
+							<img src = "Pictures/sc3.jpg" alt = "Old screenshot 3" class = "pictures_static">
+							<img src = "Pictures/sc4.jpg" alt = "Old screenshot 4" class = "pictures_static">
+						</div>
+						
+					</div>
+
+					<!-- ABOUT -->
+					<div id = "About" class = "tabcontent">
+					
+						<div class = "header_div">
+						
+							<h3>About</h3>
+							
+						</div>
+						
+						<p class = "basic_text">
+						Welcome to Swanky Space. This is a personal hub for Tyler Linderman and Alex Akoopie. View all of their greatest
+						feats and achievements right here.</p>
+						
+						<p class = "basic_text">
+						Tyler created the first version of this website. It started out as a webpage for a
+						video game Alex created back in 2016, Swanky Space! Then, Tyler started using
+						it to upload a lot of random media for his own personal use. Since then, Alex has helped out to
+						transform this website. Explore, have fun, and good luck!</p>
+						
+						<div class = "pictures_div">
+						
+							<p class = "ab_names">Tyler</p>
+							
+							<div class = "about_section">
+							
+								<div class = "about_section_picture">
+								
+									<img src = "Pictures/ab2.png" alt = "Screenshot 1" class = "pictures3by2">
+									
+									<center class = "about_section_links">
+									
+										<!-- <a class = "about_section_link" href = "" target = "_blank">Some link</a> -->
+										
+									</center>
+									
+								</div>
+								
+								<p class = "about_section_description">
+								Tyler says, <i>"Hey. The name's Tyler. This is sorta my website. Kinda cool, huh? My own
+								freakin' website! Aww yeah."</i>
+								<br><br>
+								This man is a very accomplished individual. After years of developing music, he developed a knack for
+								music theory and passed down his talents to his colleagues. Tyler has refined
+								his senses over the past decade. For example, he has mastered many different genres of music and can
+								display exhilarating vocal performances. Most of his work is done using digital audio
+								workstations. Beyond his natural adequacy with unfamiliar generators and plugins, his
+								mixing is what sets him apart from the mainstream. Beautifully mastered audio in just under a few hours. Most
+								of Tyler's work is coming up with new ideas because he works so efficiently. This is his weakness, as it forces him to
+								doubt most of his tracks, causing them to never reach the public. Even then, Tyler has
+								a lot of things to bring to the table.
+								<br><br>
+								Growing up, Tyler made his own scripts for his conveniences, dissected computer hardware,
+								and drew immersive artwork. Tyler's creativity is one of his strongest skills in his possession.
+								Take this website for example. While Alex has incorporated the design into this website,
+								it was Tyler that envisioned every little detail. From the gradience, to the parallax, and even focusing on
+								the pixels between vertically aligned elements.
+								</p>
+								
+							</div>
+						
+							<p class = "ab_names">Alex</p>
+							
+							<div class = "about_section">
+							
+								<div class = "about_section_picture" id = "about_section_picture_alex">
+								
+									<img src = "Pictures/ab1.png" alt = "Screenshot 1" class = "pictures3by2">
+									
+									<center class = "about_section_links">
+										
+										<a class = "about_section_link" href = "https://github.com/MisansProducts/" target = "_blank">GitHub</a>
+										
+									</center>
+									
+								</div>
+								
+								<p class = "about_section_description">
+								Alex says, <i>"Hello. How can I help you?"</i>
+								<br><br>
+								When Alex was young his brother gifted him a laptop. With it, he made many memories playing video games and watching videos
+								on cold winter nights. His brother suggested him to learn how to code, starting with the Python language. However,
+								Alex only grew an interest after his friend Tyler showed him that he could make a text-based adventure game by
+								using Batch on the Windows operating system. He made his first video game ever, <i>Swanky Rebels</i>.
+								<br><br>
+								Alex also started to work on modding existing video games, making maps, plugins, and other assets for people to enjoy.
+								Most of his creations had the word "Swanky" in the name. That word described everything he made; his games were odd and unique,
+								but rich in effort.
+								<br><br>
+								Holding onto the "Swanky" ideas, Alex finally decided to make a full-fledged game. On May third, 2016, Swanky Space was
+								made under his alias, Abacus Paradox. Since then, it has come a long way.
+								<br><br>
+								While not as serious as Tyler, Alex does make music as a hobby to improve upon his past and reflect how he is feeling.
+								<br><br>
+								Alex has also made many different programs and learned a variety of languages. The two most prominent projects he has
+								developed were Alex Bot - a Discord bot for his Discord server - and his personal webpage after learning HTML5, CSS,
+								and JavaScript.
+								<br><br>
+								Overall, Alex continues to improve and impress for days to come.
+								</p>
+								
+							</div>
+							
+							<hr data-symbol = "Hi" id = "five">
+							
+							<p class = "basic_text">
+							Swanky Space, since July 7, 2016.
+							</p>
+							
+							<img id = "about_end_favicon" src = "Pictures/favicon.ico">
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</body>
+
+</html>

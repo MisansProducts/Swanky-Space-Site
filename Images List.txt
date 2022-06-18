@@ -1,0 +1,15 @@
+{
+    "Images": [
+        {
+            "Sample Images": [
+                "Chrysanthemum.jpg",
+                "Desert.jpg",
+                "Hydrangeas.jpg",
+                "Koala.jpg",
+                "Lighthouse.jpg",
+                "Penguins.jpg",
+                "Tulips.jpg"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,134 @@
+{
+    "Music": [
+        {
+            "Tyler": [
+                {
+                    "Best": [
+                        {
+                            "Instrumentals": [
+                                "Hairline Instrumental.mp3",
+                                "Liquid.mp3",
+                                "Universe.mp3"
+                            ]
+                        },
+                        {
+                            "Remakes": [
+                                "Hot Girl Bummer Cover.mp3"
+                            ]
+                        },
+                        {
+                            "Vocals": [
+                                "Hairline.mp3",
+                                "I Wanna Go Home.mp3",
+                                "Intoxicating.mp3",
+                                "Money.mp3",
+                                "Overworld.mp3"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Swanky Space Soundtrack": [
+                        {
+                            "Old": [
+                                "Fluffy.mp3",
+                                "Nothing Personal Instrumental.mp3",
+                                "Space.mp3",
+                                "Swanky.mp3",
+                                "Trax.mp3",
+                                "Williams.mp3"
+                            ]
+                        },
+                        "Deadline.mp3",
+                        "O Shit.mp3",
+                        "Swanky Calm.mp3"
+                    ]
+                },
+                {
+                    "Unfinished": [
+                        {
+                            "Instrumentals": [
+                                "April Project.mp3",
+                                "Big Bank Instrumental.mp3",
+                                "Me Playing It On The Guitar.mp3",
+                                "Minisynth.mp3",
+                                "New Shoes Instrumental.mp3",
+                                "Pop.mp3",
+                                "Sick Beat.mp3",
+                                "Swaggifying.mp3",
+                                "Synthwave Dumb.mp3"
+                            ]
+                        },
+                        {
+                            "Remakes": [
+                                "JUSTICE Remake.mp3",
+                                "Music Theory Fix.mp3",
+                                "New Shoes Trap Remake.mp3",
+                                "Uniterman Adaptation.mp3"
+                            ]
+                        },
+                        {
+                            "Vocals": [
+                                "Swaggy.mp3",
+                                "Tell Me How.mp3",
+                                "Windows 10.mp3"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Worst": [
+                        {
+                            "Instrumentals": [
+                                "20 Dollars.mp3",
+                                "Bruh.mp3",
+                                "Burn.mp3",
+                                "Disco.mp3",
+                                "Drum Beat.mp3",
+                                "Dubstep.mp3",
+                                "Girl.mp3",
+                                "Hundred Clicks Challenge.mp3",
+                                "Old Demo.mp3",
+                                "Sex.mp3",
+                                "Smooth Juice.mp3",
+                                "Swagger Juice.mp3",
+                                "Thunger.mp3"
+                            ]
+                        },
+                        {
+                            "Remakes": [
+                                "I Don't Understand.mp3"
+                            ]
+                        },
+                        {
+                            "Vocals": [
+                                "Rocketeer Cover.mp3"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Alex": [
+                "Baseball Bat HD.mp3",
+                "Cell Phone.mp3",
+                "Difference.mp3",
+                "Inspirato.mp3",
+                "Jar Of Hearts.mp3",
+                "Music Theory Instrumental.mp3"
+            ]
+        },
+        {
+            "Other": [
+                "Bad Ending.mp3",
+                "Groovy Smoothie.mp3",
+                "Redshift Deep Space.mp3",
+                "SA2BM.mp3",
+                "Tristepv3.mp3",
+                "Uniterman Original.mp3",
+                "Video Games Are Cool.mp3"
+            ]
+        }
+    ]
+}
