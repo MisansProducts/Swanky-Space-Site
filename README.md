@@ -57,14 +57,16 @@ GitHub:
     * Performs LF normalization.
 * README.md
     * Provides information about this repository.
-* scr1.gif
-    * A screenshot for the "README.md" file.
+* scr1.gif, scr2.png, scr3.png
+    * Screenshots for the "README.md" file.
 
 These files are specific the GitHub. They do not contribute to the website.
 
 ### Music
 
 This tab displays music made by Tyler or Alex. It also has an "other" section with random music. There is a "track hightlights" section which features music that sounds the most complete.
+
+![Music preview](scr2.png "Music preview")
 
 ### Images
 
@@ -81,6 +83,8 @@ This tab displays the game, Swanky Space. It is a video game created by Alex Ako
 ### About
 
 This tab explains the origins and purpose of the website.
+
+![About preview](scr3.png "About preview")
 
 Future updates will include:
 * Background parallax on mouse movement
