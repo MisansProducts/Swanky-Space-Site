@@ -93,6 +93,7 @@ Future updates will include:
 * A tree list for the videos tab
 * True automatic uploading
     * Use Python scripts on the server to detect changes to media content and regenerate lists
+* Change the file extensions for "Images List.txt" and "Music List.txt" to JSON
 
 ## Credits
 
