@@ -2,13 +2,11 @@
     "Images": [
         {
             "Sample Images": [
-                "Chrysanthemum.jpg",
-                "Desert.jpg",
-                "Hydrangeas.jpg",
-                "Koala.jpg",
-                "Lighthouse.jpg",
-                "Penguins.jpg",
-                "Tulips.jpg"
+                "Sample 1.png",
+                "Sample 2.png",
+                "Sample 3.png",
+                "Sample 4.png",
+                "Sample 5.png"
             ]
         }
     ]
