@@ -8,6 +8,8 @@ Check out the [live website](http://swanky.space/ "Visit swanky.space"). This Gi
 
 ![Preview screenshot](scr1.gif "Preview screenshot")
 
+Currently using Git LFS to upload large files such as audio and video.
+
 Features include:
 * Website elements
 * Automatic file uploading
