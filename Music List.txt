@@ -8,14 +8,17 @@
                             "Instrumentals": [
                                 "Derp Derp.mp3",
                                 "Hairline Instrumental.mp3",
+                                "Juice Box.mp3",
                                 "Liquid.mp3",
                                 "May Project.mp3",
+                                "Troll Juice.mp3",
                                 "Universe.mp3"
                             ]
                         },
                         {
                             "Remakes": [
-                                "Hot Girl Bummer Cover.mp3"
+                                "Hot Girl Bummer Cover.mp3",
+                                "Oh My God Vine Remix.mp3"
                             ]
                         },
                         {
@@ -35,6 +38,7 @@
                             "Old": [
                                 "Fluffy.mp3",
                                 "Nothing Personal Instrumental.mp3",
+                                "Rectangle Man.mp3",
                                 "Space.mp3",
                                 "Swanky.mp3",
                                 "Trax.mp3",
@@ -58,6 +62,8 @@
                                 "Galactic Renaissance.mp3",
                                 "Hard Candy.mp3",
                                 "High Speed Chase.mp3",
+                                "I Tripped And Fell All The Way Down The Stairs.mp3",
+                                "Introspective.mp3",
                                 "Me Playing It On The Guitar.mp3",
                                 "Mega.mp3",
                                 "Minisynth.mp3",
@@ -67,8 +73,9 @@
                                 "Soft Candy.mp3",
                                 "Swaggifying.mp3",
                                 "Synthwave Dumb.mp3",
-                                "Trailer.mp3",
-                                "Unfiltered Benevolence.mp3"
+                                "Timebomb.mp3",
+                                "Unfiltered Benevolence.mp3",
+                                "Wet Dreams.mp3"
                             ]
                         },
                         {
