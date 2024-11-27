@@ -196,8 +196,8 @@ function listRecursion(dir, prevDirLoc, spec) {
 function init() {
 	
 	//Automatic file uploader
-	var JsonFromServerMusic = loadFile('http://tgbsbsb.x10host.com/Music List.txt'); //Gets the text file for music
-	var JsonFromServerImages = loadFile('http://tgbsbsb.x10host.com/Images List.txt'); //Gets the text file for images
+	var JsonFromServerMusic = loadFile('https://misansproducts.github.io/Swanky-Space-Site/Music List.txt'); //Gets the text file for music
+	var JsonFromServerImages = loadFile('https://misansproducts.github.io/Swanky-Space-Site/Images List.txt'); //Gets the text file for images
 	
 	JsonFromServerMusic = JSON.parse(JsonFromServerMusic); //Makes the list a JSON file (music)
 	JsonFromServerImages = JSON.parse(JsonFromServerImages); //Makes the list a JSON file (images)
